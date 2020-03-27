@@ -12,7 +12,7 @@ result
 end
 
 
-def get_japanese_emoticon(file_path = './lib/emoticons.yml', english_emoticon)
+def get_japanese_emoticon(file_path = './lib/emoticons.yml', e_emoticon)
   library = load_library(file_path)
   if library["get_emoticon"].include?(e_emoticon)
     library["get_emoticon"][e_emoticon]
